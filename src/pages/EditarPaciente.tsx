@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; // Importa o useNavigate para navegação
 
 const EditarPaciente: React.FC = () => {
   const [paciente, setPaciente] = useState({
@@ -16,10 +16,10 @@ const EditarPaciente: React.FC = () => {
     },
   });
 
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // Hook para navegação
 
   useEffect(() => {
-    // Aqui você pode buscar as informações do paciente usando o ID da rota.
+    // Aqui você pode fazer a lógica para buscar as informações do paciente baseado no id recebido
   }, []);
 
   const handleDefinirTreino = () => {
@@ -27,7 +27,7 @@ const EditarPaciente: React.FC = () => {
   };
 
   const handleHistorico = () => {
-    navigate('/historico-atividades'); // Redireciona para o histórico de treinos
+    navigate('/historico-atividades'); // Redireciona para a página de histórico de atividades (corrigido para corresponder à rota correta)
   };
 
   return (

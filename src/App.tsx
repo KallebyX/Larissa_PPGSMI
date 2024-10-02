@@ -11,13 +11,16 @@ import AnimacaoTreino from './pages/AnimacaoTreino';
 import Feedback from './components/Feedback';
 import TermosDeUso from './pages/TermosDeUso';
 import ExcluirConta from './pages/ExcluirConta';
-import HistoricoAtividades from './pages/HistoricoAtividades';
+import HistoricoAtividades from './pages/HistoricoAtividades'; // Importação corrigida
 import EditarPerfilFisioterapeuta from './pages/EditarPerfilFisioterapeuta';
 import EditarPerfilPaciente from './pages/EditarPerfilPaciente';
 import ConfirmacaoSenhaEdicaoPerfil from './pages/ConfirmacaoSenhaEdicaoPerfil';
-import CadastroPaciente from './pages/CadastroPaciente';
-import CadastroFisioterapeuta from './pages/CadastroFisioterapeuta';
+import CadastroPacienteParte1 from './pages/CadastroPacienteParte1';
+import CadastroPacienteParte2 from './pages/CadastroPacienteParte2';
 import InserirArtigos from './pages/InserirArtigos';
+import SelecaoPacientes from './pages/SelecaoPacientes';
+import SelecionarTreinosParaPaciente from './pages/SelecionarTreinosParaPaciente';
+import EditarPaciente from './pages/EditarPaciente'; // Importa o componente de edição de paciente
 
 function App() {
   return (
@@ -37,9 +40,12 @@ function App() {
         <Route path="/selecao-treino" element={<SelecaoTreinoDiario />} />
         <Route path="/animacao-treino" element={<AnimacaoTreino />} />
         
+        {/* Seleção de Treinos para Paciente */}
+        <Route path="/selecionar-treinos-paciente" element={<SelecionarTreinosParaPaciente />} />
+
         {/* Feedback e Histórico */}
         <Route path="/feedback" element={<Feedback />} />
-        <Route path="/historico-atividades" element={<HistoricoAtividades />} />
+        <Route path="/historico-atividades" element={<HistoricoAtividades />} /> {/* Nome corrigido */}
 
         {/* Termos e Exclusão de Conta */}
         <Route path="/termos-de-uso" element={<TermosDeUso />} />
@@ -52,12 +58,18 @@ function App() {
         {/* Confirmação de Senha para Edição de Perfil */}
         <Route path="/confirmar-senha-edicao" element={<ConfirmacaoSenhaEdicaoPerfil />} />
 
-        {/* Cadastro de Paciente e Fisioterapeuta */}
-        <Route path="/cadastro-paciente" element={<CadastroPaciente />} />
-        <Route path="/cadastro-fisioterapeuta" element={<CadastroFisioterapeuta />} />
+        {/* Cadastro de Paciente em duas partes */}
+        <Route path="/cadastro-paciente-parte1" element={<CadastroPacienteParte1 />} />
+        <Route path="/cadastro-paciente-parte2" element={<CadastroPacienteParte2 />} />
 
         {/* Inserir Artigos e Textos */}
         <Route path="/inserir-artigos" element={<InserirArtigos />} />
+
+        {/* Seleção de Pacientes */}
+        <Route path="/selecao-pacientes" element={<SelecaoPacientes />} />
+
+        {/* Editar Paciente com ID dinâmico */}
+        <Route path="/editar-paciente/:pacienteId" element={<EditarPaciente />} /> {/* Adicionada rota com parâmetro */}
       </Routes>
     </Router>
   );

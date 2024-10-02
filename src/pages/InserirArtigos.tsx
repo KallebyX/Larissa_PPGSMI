@@ -1,15 +1,25 @@
 import React, { useState } from 'react';
+import axios from 'axios'; // Para a integração com o back-end
 
 const InserirArtigos: React.FC = () => {
   const [titulo, setTitulo] = useState('');
   const [conteudo, setConteudo] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleInserirArtigo = () => {
-    // Lógica de inserção de artigo
-    console.log('Artigo inserido:', { titulo, conteudo });
-    alert('Artigo inserido com sucesso!');
-    setTitulo(''); // Limpa o campo após a inserção
-    setConteudo(''); // Limpa o campo após a inserção
+  const handleInserirArtigo = async () => {
+    setIsSubmitting(true);
+    try {
+      // Enviar o artigo para a API de back-end
+      await axios.post('http://localhost:5000/api/artigos', { titulo, conteudo });
+      alert('Artigo inserido com sucesso!');
+      setTitulo('');
+      setConteudo('');
+    } catch (error) {
+      console.error('Erro ao inserir artigo:', error);
+      alert('Ocorreu um erro ao inserir o artigo.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -34,7 +44,9 @@ const InserirArtigos: React.FC = () => {
           style={{ width: '100%' }}
         ></textarea>
       </div>
-      <button onClick={handleInserirArtigo}>Inserir Artigo</button>
+      <button onClick={handleInserirArtigo} disabled={isSubmitting}>
+        {isSubmitting ? 'Enviando...' : 'Inserir Artigo'}
+      </button>
     </div>
   );
 };

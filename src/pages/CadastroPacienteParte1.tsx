@@ -1,23 +1,32 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const CadastroPaciente: React.FC = () => {
+const CadastroPacienteParte1: React.FC = () => {
   const [nome, setNome] = useState('');
   const [dataNascimento, setDataNascimento] = useState('');
   const [genero, setGenero] = useState('');
   const [endereco, setEndereco] = useState('');
-  const [email, setEmail] = useState('');
-  const [senha, setSenha] = useState('');
   const [fisioterapeuta, setFisioterapeuta] = useState('');
 
-  const handleCadastro = () => {
-    // Lógica de cadastro do paciente
-    console.log('Cadastro de paciente:', { nome, dataNascimento, genero, endereco, email, senha, fisioterapeuta });
-    alert('Paciente cadastrado com sucesso!');
+  const navigate = useNavigate();
+
+  const handleContinuar = () => {
+    // Armazena os dados no localStorage para serem usados na Parte 2
+    const pacienteInfo = {
+      nome,
+      dataNascimento,
+      genero,
+      endereco,
+      fisioterapeuta,
+    };
+    localStorage.setItem('pacienteInfo', JSON.stringify(pacienteInfo));
+    // Redireciona para a parte 2 do cadastro
+    navigate('/cadastro-paciente-parte2');
   };
 
   return (
     <div>
-      <h1>Cadastro de Paciente</h1>
+      <h1>Cadastrar Paciente - Parte 1</h1>
       <div>
         <label>Nome Completo:</label>
         <input
@@ -30,9 +39,10 @@ const CadastroPaciente: React.FC = () => {
       <div>
         <label>Data de Nascimento:</label>
         <input
-          type="date"
+          type="Date"
           value={dataNascimento}
           onChange={(e) => setDataNascimento(e.target.value)}
+          placeholder="Digite sua data de nascimento"
         />
       </div>
       <div>
@@ -54,25 +64,7 @@ const CadastroPaciente: React.FC = () => {
         />
       </div>
       <div>
-        <label>Email:</label>
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Digite seu email"
-        />
-      </div>
-      <div>
-        <label>Senha:</label>
-        <input
-          type="password"
-          value={senha}
-          onChange={(e) => setSenha(e.target.value)}
-          placeholder="Digite sua senha"
-        />
-      </div>
-      <div>
-        <label>Fisioterapeuta Responsável:</label>
+        <label>Fisioterapeuta:</label>
         <input
           type="text"
           value={fisioterapeuta}
@@ -80,9 +72,9 @@ const CadastroPaciente: React.FC = () => {
           placeholder="Digite o nome do seu fisioterapeuta"
         />
       </div>
-      <button onClick={handleCadastro}>Cadastrar Paciente</button>
+      <button onClick={handleContinuar}>Continuar</button>
     </div>
   );
 };
 
-export default CadastroPaciente;
+export default CadastroPacienteParte1;

@@ -1,20 +1,30 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const CadastroFisioterapeuta: React.FC = () => {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [crefito, setCrefito] = useState('');
   const [senha, setSenha] = useState('');
+  const [termosAceitos, setTermosAceitos] = useState(false); // Verifica se os termos foram aceitos
+
+  const navigate = useNavigate(); // Para navegação entre páginas
 
   const handleCadastro = () => {
+    if (!termosAceitos) {
+      alert('Você precisa aceitar os Termos de Uso e a Política de Privacidade para continuar.');
+      return;
+    }
+
     // Lógica de cadastro do fisioterapeuta
     console.log('Cadastro de fisioterapeuta:', { nome, email, crefito, senha });
     alert('Fisioterapeuta cadastrado com sucesso!');
+    navigate('/login'); // Redireciona para a página de login após o cadastro
   };
 
   return (
     <div>
-      <h1>Cadastro de Fisioterapeuta</h1>
+      <h1>Cadastrar Fisioterapeuta</h1>
       <div>
         <label>Nome Completo:</label>
         <input
@@ -50,6 +60,18 @@ const CadastroFisioterapeuta: React.FC = () => {
           onChange={(e) => setSenha(e.target.value)}
           placeholder="Digite sua senha"
         />
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          name="termos"
+          id="termosEprivacidade"
+          checked={termosAceitos}
+          onChange={(e) => setTermosAceitos(e.target.checked)}
+        />
+        <label htmlFor="termosEprivacidade">
+          Eu li e concordo com os Termos de Uso e a Política de Privacidade.
+        </label>
       </div>
       <button onClick={handleCadastro}>Cadastrar Fisioterapeuta</button>
     </div>
