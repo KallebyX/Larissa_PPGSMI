@@ -5,18 +5,25 @@ interface InputProps {
   type: string;
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  placeholder?: string; // Adiciona o placeholder como opcional
+  placeholder?: string;
 }
 
 const Input: React.FC<InputProps> = ({ label, type, value, onChange, placeholder }) => {
   return (
-    <div>
-      <label>{label}</label>
-      <input 
-        type={type} 
-        value={value} 
-        onChange={onChange} 
-        placeholder={placeholder} // Atribui o placeholder ao input
+    <div style={{ marginBottom: '1rem' }}>
+      <label style={{ display: 'block', fontWeight: 'bold', marginBottom: '0.5rem' }}>{label}</label>
+      <input
+        type={type}
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        style={{
+          padding: '0.5rem',
+          fontSize: '1rem',
+          borderRadius: '4px',
+          border: '1px solid #ccc',
+          width: '100%',
+        }}
       />
     </div>
   );
