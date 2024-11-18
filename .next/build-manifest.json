@@ -1,0 +1,184 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-42372ed130431b0a.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/AHmJhg24-uO5E1rKQ1AI2/_buildManifest.js",
+    "static/AHmJhg24-uO5E1rKQ1AI2/_ssgManifest.js"
+  ],
+  "rootMainFiles": [],
+  "rootMainFilesTree": {},
+  "pages": {
+    "/": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/pages/index-1e9fb14c14ac4e64.js"
+    ],
+    "/CadastroFisioterapeuta": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/pages/CadastroFisioterapeuta-ddab6f11e4dccae3.js"
+    ],
+    "/EditarPaciente": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/424-61a6402746ff1128.js",
+      "static/chunks/pages/EditarPaciente-37a9f14885c3fdaa.js"
+    ],
+    "/SelecionarTreinosParaPaciente": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/424-61a6402746ff1128.js",
+      "static/chunks/pages/SelecionarTreinosParaPaciente-22f9f45401c144e6.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/pages/_app-63a31943a86197bc.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/pages/_error-fde50cb7f1ab27e0.js"
+    ],
+    "/animacao-treino": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/pages/animacao-treino-2280661d31f3654e.js"
+    ],
+    "/cadastro": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/424-61a6402746ff1128.js",
+      "static/chunks/pages/cadastro-7a9f2521779fe959.js"
+    ],
+    "/cadastro-paciente-parte1": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/424-61a6402746ff1128.js",
+      "static/chunks/pages/cadastro-paciente-parte1-7acb8f9ef379070d.js"
+    ],
+    "/cadastro-paciente-parte2": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/424-61a6402746ff1128.js",
+      "static/chunks/pages/cadastro-paciente-parte2-d6abe18136a8f1ef.js"
+    ],
+    "/confirmar-senha-edicao": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/pages/confirmar-senha-edicao-ba65ccbd334ff10d.js"
+    ],
+    "/definir-treino": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/424-61a6402746ff1128.js",
+      "static/chunks/pages/definir-treino-8c0c23e092ee669c.js"
+    ],
+    "/editar-perfil-fisioterapeuta": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/424-61a6402746ff1128.js",
+      "static/chunks/pages/editar-perfil-fisioterapeuta-5fdcff71fc034059.js"
+    ],
+    "/editar-perfil-paciente": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/424-61a6402746ff1128.js",
+      "static/chunks/pages/editar-perfil-paciente-1165346091906eae.js"
+    ],
+    "/excluir-conta": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/424-61a6402746ff1128.js",
+      "static/chunks/pages/excluir-conta-0ecb934bddd85f7c.js"
+    ],
+    "/feedback": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/pages/feedback-1e5d413efffbcd27.js"
+    ],
+    "/historico-atividades": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/381-86599465bf0118b3.js",
+      "static/css/c104401138f68e2c.css",
+      "static/chunks/pages/historico-atividades-eb84fc5686209a01.js"
+    ],
+    "/inserir-artigos": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/335-3a91e18afa7c3107.js",
+      "static/chunks/pages/inserir-artigos-4e13b58f25b69e4f.js"
+    ],
+    "/login": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/424-61a6402746ff1128.js",
+      "static/chunks/pages/login-b701405fd31e021d.js"
+    ],
+    "/perfil-fisioterapeuta": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/424-61a6402746ff1128.js",
+      "static/chunks/pages/perfil-fisioterapeuta-5bbf61d4323baec1.js"
+    ],
+    "/perfil-paciente": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/424-61a6402746ff1128.js",
+      "static/chunks/pages/perfil-paciente-078f7376390d7b50.js"
+    ],
+    "/selecao-pacientes": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/424-61a6402746ff1128.js",
+      "static/chunks/pages/selecao-pacientes-30922ed64efa1ddf.js"
+    ],
+    "/selecao-treino": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/424-61a6402746ff1128.js",
+      "static/chunks/pages/selecao-treino-79dad932ac0dc63f.js"
+    ],
+    "/termos-de-uso": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/pages/termos-de-uso-8320253711132e5a.js"
+    ],
+    "/visualizar-paciente": [
+      "static/chunks/webpack-db5deee828cc1f0f.js",
+      "static/chunks/framework-06121e066c6696d9.js",
+      "static/chunks/main-eeb5a3811033f7e0.js",
+      "static/chunks/424-61a6402746ff1128.js",
+      "static/chunks/pages/visualizar-paciente-ed59a1634f77c520.js"
+    ]
+  },
+  "ampFirstPages": []
+}
